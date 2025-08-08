@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Apresentação</title>
+    <link href="  " rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+            --text-color: #333;
+            --text-light: #f8f8f8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-color);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: var(--text-light);
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+        }
+
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin: 0 auto 20px;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+
+        .about-section {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+        }
+
+        .details-section {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            margin-left: 20px;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .info-label {
+            font-weight: 600;
+            min-width: 120px;
+            color: var(--dark-color);
+        }
+
+        .social-links {
+            margin-top: 30px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            color: var(--secondary-color);
+            transform: translateX(5px);
+        }
+
+        .social-icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 15px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+            
+            .details-section {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+            
+            .profile-pic {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="file (1).jpg" alt="Minha foto de perfil profissional" class="profile-pic">
+            <h1>Camila Lopes</h1>
+            <p class="subtitle">Estudante do colégio Cívico - militar Olavo Bilac</p>
+        </header>
+
+        <div class="main-content">
+            <section class="about-section">
+                <h2>Sobre Mim</h2>
+                <p>Olá! Sou uma estudante apaixonada por livros de romance, tenho 17 anos e estou querendo cursar farmácia. </p>
+                <p> Estou estudando o ensino médio junto com o técnico para aprender a programar e saber mecher com a tecnologia.</p>
+                <p> Além dos estudos, eu gosto de jogar volei, passar momentos com minha família e assistir filmes de romance. No momento estou sendo babá mas estou aguardando uma vaga de emprego para ter um pouco de renda antes de iniciar a faculdade.</p>
+            </section>
+
+            <section class="details-section">
+                <h2>Informações Pessoais</h2>
+                
+                <div class="info-item">
+                    <span class="info-label">Data de Nascimento:</span>
+                    <span>20 de julho de 2008</span>
+                </div>
+                
+                <div class="info-item">
+                    <span class="info-label">Localização:</span>
+                    <span>Peabiru,PR, Brasil</span>
+                </div>
+                
+                <div class="info-item">
+                    <span class="info-label">E-mail:</span>
+                    <span>vieira.lopes.camila@escola.pr.gov.br</span>
+                </div>
+
+                <div class="social-links">
+                    <h3>Redes Sociais</h3>
+                    <a href="https://linkedin.com/in/seuperfil" class="social-link" target="_blank">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/918ddef3-7ac5-4bd2-8a18-b7a890463be3.png" alt="LinkedIn logo" class="social-icon">
+                        <span>@meunome_linkedin</span>
+                    </a>
+                    <a href="https://github.com/seuusuario" class="social-link" target="_blank">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/51338827-e483-4e51-9a71-7b6be786289f.png" alt="GitHub logo" class="social-icon">
+                        <span>@meunome_github</span>
+                    </a>
+                    <a href="https://twitter.com/seuusuario" class="social-link" target="_blank">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6e90cf11-f4cb-45b7-8013-f5cd91cb47ed.png" alt="Twitter logo" class="social-icon">
+                        <span>@meunome_twitter</span>
+                    </a>
+                    <a href="https://instagram.com/seuperfil" class="social-link" target="_blank">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/63812e6a-30b0-4de9-bb4d-b4b73d84b0be.png" alt="Instagram logo" class="social-icon">
+                        <span>@meunome_instagram</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
